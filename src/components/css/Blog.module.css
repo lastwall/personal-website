@@ -1,0 +1,31 @@
+/* imported from src/pages/blog.tsx */
+
+.search {
+  @apply flex my-5;
+}
+
+.searchInput {
+  @apply z-10 w-full bg-primary border px-4 py-2 outline-none inline-block rounded-r-md;
+}
+.searchInput:focus {
+  @apply ring-1 ring-blue-500 border-blue-500;
+}
+
+.searchButton {
+  @apply rounded-l-md border bg-primary py-2 px-4 inline-block;
+}
+
+.searchButton:hover {
+  @apply border-secondary;
+}
+
+.article {
+  @apply py-4 px-8 border rounded-md my-5 w-full flex flex-col;
+}
+
+.article header {
+  @apply text-3xl;
+}
+.article p {
+  @apply text-primary;
+}

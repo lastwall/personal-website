@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@theme/*": ["./src/theme/*"],
+      "@components/*": ["./src/components/*"],
+      "@config/*": ["./config/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@layout/*": ["./src/layout/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "src", "config"],
+  "exclude": ["src/lib/sitemap.js"]
+}

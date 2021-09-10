@@ -1,0 +1,77 @@
+:root {
+  --colors-body-background: white;
+
+  --colors-text-primary: theme('colors.gray.700'); /* Typography */
+  --colors-text-secondary: theme('colors.gray.900');
+
+  --colors-border-primary: theme('colors.gray.200');
+  --colors-border-secondary: theme('colors.gray.600');
+
+  --colors-bg-primary: rgba(229, 231, 235, 0.25); /* colors.gray.200 */
+  --colors-bg-secondary: theme('colors.gray.100');
+}
+
+.dark {
+  --colors-body-background: theme('colors.gray.900');
+
+  --colors-text-primary: theme('colors.gray.300'); /* Typography */
+  --colors-text-secondary: theme('colors.gray.100');
+
+  --colors-border-primary: theme('colors.gray.800');
+  --colors-border-secondary: theme('colors.gray.400');
+
+  --colors-bg-primary: rgba(31, 41, 55, 0.25); /* colors.gray.800 */
+  --colors-bg-secondary: rgba(31, 41, 55, 0.5); /* colors.gray.800 */
+}
+
+body {
+  background-color: var(--colors-body-background);
+  overflow: scroll;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  @apply w-1;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-500;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-comic !important;
+}
+
+.prose div[data-title] {
+  @apply py-3 px-5 font-semibold font-mono text-secondary bg-secondary border rounded-t-md text-sm;
+}
+
+.prose .task-list-item {
+  @apply pl-2;
+}
+.prose .task-list-item::before {
+  @apply hidden;
+}
+
+.prose h3 .anchor,
+.prose h4 .anchor,
+.prose h5 .anchor {
+  @apply hidden;
+}

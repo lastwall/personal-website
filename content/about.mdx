@@ -1,0 +1,43 @@
+<Section header="About Me">
+  <figure class="md:flex md:p-0">
+              <Image  
+                src={imageUrl}
+                className="w-32 h-32 md:w-48 md:h-auto md:rounded-none mx-auto" 
+                width="484" 
+                height="512"
+                objectFit='cover'
+                objectPosition= 'right'
+              />
+      <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+        <blockquote>
+          <p className="prose dark:prose-dark">
+                    Hi, my name is <b>Saeid Hassanpour</b>. I was born in Iran/Gilan. 
+                    I have got my Bachelor's degree in computer engineering at the Karaj PNU university. 
+                    I've started programming when I was in high school, at the moment I am engaged with <b>PHP</b>, and started working as a Freelancer, and later on I've worked with many companies inside and outside of country. 
+                    So still I love programming <b>PHP</b>. 
+                    I'm always eager to exploring tech-related stuff so I've tried to learn as much as I can. 
+                    I've expanded my knowledge more in many aspects.<br></br>
+                    Currently working on my <b>JS</b> skills in both Backend &amp; Frontend which drives me to work on <b>Node.js,</b> <b>Next.js, React </b>with <b>Tailwindcss</b> and <b>Chakra-ui</b>.
+            </p>
+        </blockquote>
+      </div>
+  </figure>
+</Section>
+<Section header="My Editor">
+  <p className="prose dark:prose-dark">
+    I'm using{' '}
+    <b>
+      <a href="https://code.visualstudio.com">VS Code</a>
+    </b>{' '}
+    with this {extensions.length} extensions:
+    <ul>
+      {extensions.sort().map((ext) => (
+        <li key={ext.item}>
+          <a href={`https://marketplace.visualstudio.com/items?itemName=${ext.item}`}>{ext.name}</a>
+        </li>
+      ))}
+    </ul>
+    I'm using <b>{extensions.find((ext) => ext.colorTheme).name}</b> as a color theme also{' '}
+    <b>{extensions.find((ext) => ext.iconTheme).name}</b> as a icon theme.
+  </p>
+</Section>

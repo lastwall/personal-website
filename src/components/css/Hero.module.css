@@ -1,0 +1,9 @@
+.social {
+  border-color: var(--social-color);
+  color: var(--social-color);
+  @apply mt-2 mr-2 p-2 text-center border-2 rounded-md transition-colors;
+}
+.social:hover {
+  background-color: var(--social-color);
+  color: var(--social-color-hover);
+}

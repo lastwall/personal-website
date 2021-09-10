@@ -1,0 +1,26 @@
+{
+  "extends": ["next", "prettier"],
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["*.config.js", "*.d.ts", "*.config.ts", "build/*", "*.js"],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "@typescript-eslint/array-type": ["error"],
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "react/react-in-jsx-scope": ["off"],
+    "react/jsx-props-no-spreading": ["off"],
+    "import/no-extraneous-dependencies": ["off"],
+    "react/prop-types": ["off"],
+    "react/display-name": ["off"],
+    "jsx-a11y/anchor-is-valid": ["off"],
+    "@typescript-eslint/no-shadow": ["off"]
+  }
+}
